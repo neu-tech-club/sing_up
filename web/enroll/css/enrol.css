@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(235,235,242);
+    font-family: "PingFang SC", system-ui, "Microsoft Sans Serif", sans-serif !important;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+input[type=text], input[type=tel], select {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: inherit !important;
+}
+
+.page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(235,235,242);
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 8px;
+}
+
+.list {
+    background: white;
+    position: relative;
+}
+
+.list > .list__item {
+    height: 44px;
+    line-height: 28px;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 0.5px border */
+.list > .list__item:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+/* 0.5px border */
+.list > .list__item:last-child:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 44px;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.list > .list__item > .list__item__title {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+    float: left;
+}
+
+.list > .list__item > .list__item__input {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(142, 142, 147);
+    float: right;
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.list > .list__item > .list__item__checkbox {
+    float: right;
+    line-height: 28px;
+}
+
+button.btn {
+    -webkit-appearance: none;
+    border: none;
+    width: calc(100% - 16px);
+    height: 44px;
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button.btn.btn-primary {
+    color: white;
+    background: rgb(31, 110, 227);
+}

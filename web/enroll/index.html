@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NEU Club Enroll</title>
+    <link href="css/enrol.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form class="page">
+    <h1 class="title">东北大学技术俱乐部报名</h1>
+    <ul class="list">
+        <li class="list__item">
+            <label class="list__item__title" for="stuId">学号</label>
+            <input class="list__item__input" type="text" pattern="/d{8}" id="stuId" name="stuId">
+        </li>
+        <li class="list__item">
+            <label class="list__item__title" for="phone">电话号</label>
+            <input class="list__item__input" type="tel" autocomplete="tel" id="phone" name="phone">
+        </li>
+        <li class="list__item">
+            <label class="list__item__title" for="college">学院</label>
+            <input class="list__item__input" type="text" id="college" name="college">
+        </li>
+        <li class="list__item">
+            <label class="list__item__title" for="stuName">姓名</label>
+            <input class="list__item__input" type="text" autocomplete="name" id="stuName" name="stuName">
+        </li>
+        <li class="list__item">
+            <label class="list__item__title" for="selector">方向</label>
+            <select class="list__item__input" id="selector" name="selector">
+                <option>Python基础</option>
+                <option>后端</option>
+                <option>大数据基础</option>
+            </select>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="list__item">
+            <label class="list__item__title" for="csdn" style="font-weight: bold; font-style: italic;"><span style="color: red;">C</span>SDN</label>
+            <div class="list__item__checkbox">
+                <input type="checkbox" id="csdn" name="ibm">
+            </div>
+        </li>
+        <li class="list__item">
+            <label class="list__item__title" for="ibm" style="font-weight: bold; font-style: italic;">IBM</label>
+            <div class="list__item__checkbox">
+                <input type="checkbox" id="ibm" name="ibm">
+            </div>
+        </li>
+    </ul>
+    <button class="btn btn-primary">报名</button>
+</form>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
